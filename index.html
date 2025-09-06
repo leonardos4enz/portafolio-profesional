@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Moderno</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="grid-background"></div>
+    
+    <!-- Navegación Flotante -->
+    <nav class="floating-nav">
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a href="#inicio" class="nav-link active" data-section="inicio">
+                    <span class="nav-text">Inicio</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#habilidades" class="nav-link" data-section="habilidades">
+                    <span class="nav-text">Habilidades</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#proyectos" class="nav-link" data-section="proyectos">
+                    <span class="nav-text">Proyectos</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#trayectoria" class="nav-link" data-section="trayectoria">
+                    <span class="nav-text">Trayectoria</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    
+    <main class="container">
+        <!-- Información Principal -->
+        <section id="inicio" class="hero-section">
+            <div class="hero-container">
+                <div class="hero-left">
+                    <div class="hero-badge">
+                        <span class="badge-text">Full Stack Developer</span>
+                    </div>
+                    
+                    <h1 class="hero-title">Leonardo Sáenz</h1>
+                    
+                    <div class="hero-role">
+                        <div class="role-chip active">Líder de proyectos</div>
+                        <div class="role-chip">Experiencias digitales</div>
+                        <div class="role-chip">Automatizaciones con IA</div>
+                    </div>
+
+                    <!-- Redes Sociales -->
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/leonardos4enz/" target="_blank" rel="noopener noreferrer" class="social-link linkedin" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://wa.me/528110375798" target="_blank" rel="noopener noreferrer" class="social-link whatsapp" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://www.github.com/leonardos4enz/" target="_blank" rel="noopener noreferrer" class="social-link github" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:leonardorsaenz@gmail.com" class="social-link email" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="hero-cta">
+                        <button class="cta-primary" onclick="document.querySelector('#proyectos').scrollIntoView({ behavior: 'smooth' })">
+                            <span>Ver mi trabajo</span>
+                            <div class="cta-arrow">→</div>
+                        </button>
+                        <a href="https://n8n-n8n.ppnoc4.easypanel.host/form/057e3e2a-5309-4283-b3ba-f4bd470d5d95" target="_blank" rel="noopener noreferrer" class="cta-secondary n8n-link">
+                            <span>Contactar</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-right">
+                    <div class="hero-image">
+                        <img src="me.jpg" alt="Leonardo Sáenz" class="profile-photo">
+                        <div class="photo-glow"></div>
+                    </div>
+                    <div class="hero-status">
+                        <div class="status-indicator"></div>
+                        <span id="experience-text">Disponible para proyectos</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Elementos flotantes -->
+            <div class="floating-elements">
+                <!-- Figuras geométricas 2D -->
+                <div class="floating-shape circle"></div>
+                <div class="floating-shape triangle"></div>
+                <div class="floating-shape square"></div>
+                <div class="floating-shape diamond"></div>
+                <div class="floating-shape hexagon"></div>
+                
+                <!-- Figuras geométricas 3D -->
+                <div class="floating-shape cube"></div>
+                <div class="floating-shape sphere"></div>
+                <div class="floating-shape pyramid"></div>
+                
+                <!-- Expresiones matemáticas -->
+                <div class="floating-math">∑</div>
+                <div class="floating-math">∫</div>
+                <div class="floating-math">∆</div>
+                <div class="floating-math">π</div>
+                <div class="floating-math">∞</div>
+                <div class="floating-math">√</div>
+                
+                <!-- Partículas -->
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+            </div>
+            </div>
+        </section>
+
+        <!-- Carrusel de Tecnologías -->
+        <section id="tecnologias" class="tech-carousel-section">
+            <div class="tech-carousel">
+                <div class="tech-track" id="techTrack">
+                    <!-- Frontend / Lenguajes -->
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <span>HTML</span>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                        <span>CSS</span>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <i class="fab fa-js-square"></i>
+                        </div>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <i class="fab fa-bootstrap"></i>
+                        </div>
+                        <span>Bootstrap</span>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <i class="fab fa-js-square"></i>
+                        </div>
+                        <span>jQuery</span>
+                    </div>
+                    
+                    <!-- IA / Machine Learning -->
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <img src="https://static.vecteezy.com/system/resources/previews/022/227/364/non_2x/openai-chatgpt-logo-icon-free-png.png" alt="OpenAI">
+                        </div>
+                        <span>OpenAI</span>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <img src="https://claude.ai/favicon.ico" alt="Claude">
+                        </div>
+                        <span>Claude</span>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <img src="https://www.gstatic.com/lamda/images/gemini_sparkle_v002_d4735304ff6292a690345.svg" alt="Gemini">
+                        </div>
+                        <span>Gemini</span>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <img src="https://avatars.githubusercontent.com/u/151674099?s=200&v=4" alt="Ollama">
+                        </div>
+                        <span>Ollama</span>
+                    </div>
+                    
+                    <!-- Backend / Lenguajes de programación -->
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <i class="fab fa-microsoft"></i>
+                        </div>
+                        <span>C#</span>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <i class="fab fa-microsoft"></i>
+                        </div>
+                        <span>.NET</span>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <i class="fab fa-java"></i>
+                        </div>
+                        <span>Java</span>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <span>Python</span>
+                    </div>
+                    
+                    <!-- Bases de datos -->
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <span>SQL</span>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <span>MySQL</span>
+                    </div>
+                    
+                    <!-- Herramientas / DevOps -->
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <i class="fab fa-git-alt"></i>
+                        </div>
+                        <span>Git</span>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="Azure DevOps">
+                        </div>
+                        <span>Azure DevOps</span>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <span>SCRUM</span>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <span>IIS</span>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sonarqube/sonarqube-original.svg" alt="SonarQube">
+                        </div>
+                        <span>SonarQube</span>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <img src="https://raw.githubusercontent.com/n8n-io/n8n/master/assets/n8n-logo.png" alt="n8n">
+                        </div>
+                        <span>n8n</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partículas de fondo para secciones inferiores -->
+        <div class="background-particles" id="backgroundParticles"></div>
+
+        <!-- Habilidades de Programación -->
+        <section id="habilidades" class="skills-section">
+            <h2 class="section-title">Habilidades</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon material-icons">code</div>
+                    <h3>Programación Web</h3>
+                    <p>Backend y Frontend completo</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon material-icons">analytics</div>
+                    <h3>Análisis de negocios</h3>
+                    <p>Identificación y optimización de procesos</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon material-icons">psychology</div>
+                    <h3>Inteligencia artificial aplicada</h3>
+                    <p>Automatizaciones y soluciones inteligentes</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Proyectos -->
+        <section id="proyectos" class="projects-section">
+            <h2 class="section-title">Proyectos</h2>
+            
+            <!-- Buscador de tecnologías -->
+            <div class="tech-search-container">
+                <div class="search-input-wrapper">
+                    <i class="fas fa-search search-icon"></i>
+                    <input 
+                        type="text" 
+                        id="techSearch" 
+                        class="tech-search-input" 
+                        placeholder="Buscar por tecnología (ej: JavaScript, C#, MySQL...)"
+                        autocomplete="off"
+                    >
+                    <button id="clearSearch" class="clear-search-btn" style="display: none;">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="search-results-info">
+                    <span id="resultsCount">3 proyectos encontrados</span>
+                </div>
+            </div>
+            
+            <div id="projectsGrid" class="projects-grid">
+                <!-- Los proyectos se generarán dinámicamente con JavaScript -->
+            </div>
+        </section>
+
+        <!-- Modal para arquitectura del proyecto -->
+        <div id="projectModal" class="modal-overlay">
+            <div class="modal-container">
+                <div class="modal-header">
+                    <h3 id="modalTitle" class="modal-title">Arquitectura del Proyecto</h3>
+                    <button id="closeModal" class="modal-close">&times;</button>
+                </div>
+                <div id="modalContent" class="modal-content">
+                    <!-- Contenido dinámico del modal -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Trayectoria -->
+        <section id="trayectoria" class="timeline-section">
+            <h2 class="section-title">Trayectoria</h2>
+            <div class="timeline-container">
+                <div class="timeline-line"></div>
+                <div id="timelineItems" class="timeline-items">
+                    <!-- Las entradas se generarán dinámicamente con JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/leonardos4enz/" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://wa.me/528110375798" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="https://www.github.com/leonardos4enz/" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:leonardorsaenz@gmail.com" class="footer-social-link" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://n8n-n8n.ppnoc4.easypanel.host/form/057e3e2a-5309-4283-b3ba-f4bd470d5d95" target="_blank" rel="noopener noreferrer" class="footer-contact-btn">
+                    <span>Contactar</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+    <link href="chatbot-styles.css" rel="stylesheet" />
+    <script type="module">
+        import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+        createChat({
+            webhookUrl: 'https://n8n-n8n.ppnoc4.easypanel.host/webhook/e02d3568-1b94-44d7-a907-e6176818b32d/chat',
+            webhookConfig: {
+                method: 'POST',
+                headers: {}
+            },
+            target: '#n8n-chat',
+            mode: 'window',
+            chatInputKey: 'chatInput',
+            chatSessionKey: 'sessionId',
+            loadPreviousSession: false,
+            metadata: {},
+            showWelcomeScreen: false,
+            defaultLanguage: 'es',
+            initialMessages: [
+                '¡Hola! 👋 Soy Leonardo Sáenz virtual',
+                'Puedo contarte sobre mis proyectos, experiencia y habilidades técnicas. ¿En qué te puedo ayudar?'
+            ],
+            i18n: {
+                es: {
+                    title: 'Leonardo Virtual',
+                    subtitle: '',
+                    footer: '',
+                    getStarted: 'Iniciar conversación',
+                    inputPlaceholder: 'Escribe tu pregunta...',
+                },
+            },
+            enableStreaming: false,
+        });
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>

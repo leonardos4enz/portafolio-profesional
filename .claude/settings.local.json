@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(/C:\\Users\\Leo\\Desktop\\Social\\Github\\Repositorios\\portafolio-moderno/**)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

@@ -1,0 +1,449 @@
+/* ==============================================
+   ESTILOS PERSONALIZADOS PARA CHATBOT N8N
+   Diseño Glassmorphism que coincide con el portafolio
+   ============================================== */
+
+:root {
+  /* Colors - Tema oscuro glassmorphism */
+  --chat--color-primary: #ffffff;
+  --chat--color-primary-shade-50: rgba(255, 255, 255, 0.9);
+  --chat--color-primary-shade-100: rgba(255, 255, 255, 0.8);
+  --chat--color-secondary: #ffffff;
+  --chat--color-secondary-shade-50: rgba(255, 255, 255, 0.9);
+  --chat--color-white: rgba(255, 255, 255, 0.95);
+  --chat--color-light: rgba(255, 255, 255, 0.05);
+  --chat--color-light-shade-50: rgba(255, 255, 255, 0.1);
+  --chat--color-light-shade-100: rgba(255, 255, 255, 0.15);
+  --chat--color-medium: rgba(255, 255, 255, 0.2);
+  --chat--color-dark: #000000;
+  --chat--color-disabled: rgba(255, 255, 255, 0.4);
+  --chat--color-typing: rgba(255, 255, 255, 0.7);
+
+  /* Base Layout */
+  --chat--spacing: 1rem;
+  --chat--border-radius: 16px;
+  --chat--transition-duration: 0.3s;
+  --chat--font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Window Dimensions - Glassmorphism Style */
+  --chat--window--width: 420px;
+  --chat--window--height: 650px;
+  --chat--window--bottom: 2rem;
+  --chat--window--right: 2rem;
+  --chat--window--z-index: 9999;
+  --chat--window--border: 1px solid rgba(255, 255, 255, 0.2);
+  --chat--window--border-radius: 20px;
+  --chat--window--margin-bottom: var(--chat--spacing);
+
+  /* Header Styles - Glassmorphism */
+  --chat--header-height: auto;
+  --chat--header--padding: 1.5rem;
+  --chat--header--background: linear-gradient(135deg, 
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
+  --chat--header--color: #ffffff;
+  --chat--header--border-top: none;
+  --chat--header--border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  --chat--header--border-left: none;
+  --chat--header--border-right: none;
+  --chat--heading--font-size: 1.4rem;
+  --chat--subtitle--font-size: 0.9rem;
+  --chat--subtitle--line-height: 1.5;
+
+  /* Message Styles */
+  --chat--message--font-size: 0.95rem;
+  --chat--message--padding: 1rem 1.2rem;
+  --chat--message--border-radius: 16px;
+  --chat--message-line-height: 1.6;
+  --chat--message--margin-bottom: 0.8rem;
+  --chat--message--bot--background: rgba(255, 255, 255, 0.08);
+  --chat--message--bot--color: rgba(255, 255, 255, 0.9);
+  --chat--message--bot--border: 1px solid rgba(255, 255, 255, 0.12);
+  --chat--message--user--background: rgba(255, 255, 255, 0.15);
+  --chat--message--user--color: #ffffff;
+  --chat--message--user--border: 1px solid rgba(255, 255, 255, 0.25);
+  --chat--message--pre--background: rgba(0, 0, 0, 0.2);
+  --chat--messages-list--padding: 1.5rem;
+
+  /* Toggle Button - Glassmorphism */
+  --chat--toggle--size: 70px;
+  --chat--toggle--width: var(--chat--toggle--size);
+  --chat--toggle--height: var(--chat--toggle--size);
+  --chat--toggle--border-radius: 50%;
+  --chat--toggle--background: linear-gradient(135deg, 
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
+  --chat--toggle--hover--background: linear-gradient(135deg, 
+    rgba(255, 255, 255, 0.15) 0%,
+    rgba(255, 255, 255, 0.08) 100%
+  );
+  --chat--toggle--active--background: linear-gradient(135deg, 
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+  --chat--toggle--color: #ffffff;
+
+  /* Input Area */
+  --chat--textarea--height: 55px;
+  --chat--textarea--max-height: 35rem;
+  --chat--input--font-size: 0.95rem;
+  --chat--input--border: 1px solid rgba(255, 255, 255, 0.15);
+  --chat--input--border-radius: 14px;
+  --chat--input--padding: 1rem 1.2rem;
+  --chat--input--background: rgba(255, 255, 255, 0.05);
+  --chat--input--text-color: rgba(255, 255, 255, 0.95);
+  --chat--input--line-height: 1.5;
+  --chat--input--placeholder--font-size: 0.9rem;
+  --chat--input--border-active: 1px solid rgba(255, 255, 255, 0.3);
+  --chat--input--left--panel--width: 3rem;
+
+  /* Button Styles */
+  --chat--button--color: #ffffff;
+  --chat--button--background: rgba(255, 255, 255, 0.1);
+  --chat--button--padding: 0.8rem 1.5rem;
+  --chat--button--border-radius: 12px;
+  --chat--button--hover--color: #ffffff;
+  --chat--button--hover--background: rgba(255, 255, 255, 0.15);
+  --chat--close--button--color-hover: rgba(255, 255, 255, 0.8);
+
+  /* Send and File Buttons */
+  --chat--input--send--button--background: rgba(255, 255, 255, 0.1);
+  --chat--input--send--button--color: rgba(255, 255, 255, 0.8);
+  --chat--input--send--button--background-hover: rgba(255, 255, 255, 0.15);
+  --chat--input--send--button--color-hover: #ffffff;
+  --chat--input--file--button--background: rgba(255, 255, 255, 0.05);
+  --chat--input--file--button--color: rgba(255, 255, 255, 0.7);
+  --chat--input--file--button--background-hover: rgba(255, 255, 255, 0.1);
+  --chat--input--file--button--color-hover: rgba(255, 255, 255, 0.9);
+  --chat--files-spacing: 0.5rem;
+
+  /* Body and Footer */
+  --chat--body--background: linear-gradient(135deg, 
+    rgba(0, 0, 0, 0.3) 0%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+  --chat--footer--background: rgba(255, 255, 255, 0.02);
+  --chat--footer--color: rgba(255, 255, 255, 0.8);
+}
+
+/* ==============================================
+   CLASES PERSONALIZADAS Y EFECTOS GLASSMORPHISM
+   ============================================== */
+
+/* Contenedor principal del chat - sin fondo (solo wrapper) */
+.chat-window-wrapper,
+.n8n-chat {
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Contenedor del chat con glassmorphism */
+.chat-window {
+  background: linear-gradient(135deg, 
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(255, 255, 255, 0.02) 100%
+  ) !important;
+  backdrop-filter: blur(20px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(20px) saturate(180%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.37),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
+  border-radius: 20px !important;
+  overflow: hidden;
+}
+
+/* Botón de toggle con glassmorphism */
+.chat-toggle,
+.n8n-chat-toggle {
+  background: linear-gradient(135deg, 
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.05) 100%
+  ) !important;
+  backdrop-filter: blur(15px) !important;
+  -webkit-backdrop-filter: blur(15px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  box-shadow: 
+    0 4px 20px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+  color: #ffffff !important;
+}
+
+.chat-toggle:hover,
+.n8n-chat-toggle:hover {
+  background: linear-gradient(135deg, 
+    rgba(255, 255, 255, 0.15) 0%,
+    rgba(255, 255, 255, 0.08) 100%
+  ) !important;
+  transform: translateY(-2px) scale(1.05) !important;
+  box-shadow: 
+    0 6px 25px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.25) !important;
+}
+
+/* Header del chat */
+.chat-header {
+  background: linear-gradient(135deg, 
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.05) 100%
+  ) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.chat-header h1,
+.chat-header .chat-title {
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  font-size: 1.4rem !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+}
+
+.chat-header h1::before,
+.chat-header .chat-title::before {
+  content: '';
+  width: 50px;
+  height: 50px;
+  background-image: url('./avatar.png');
+  background-size: 240%;
+  background-position: center;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  flex-shrink: 0;
+  display: block;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.chat-header p,
+.chat-header .chat-subtitle {
+  color: rgba(255, 255, 255, 0.8) !important;
+  font-size: 0.9rem !important;
+}
+
+/* Mensajes del chat */
+.chat-message {
+  max-width: 75% !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  margin-bottom: 1rem !important;
+  transition: all 0.3s ease !important;
+}
+
+.chat-message:hover {
+  transform: translateY(-1px) !important;
+}
+
+/* Mensajes del bot */
+.chat-message.bot,
+.chat-message[data-direction="incoming"] {
+  background: rgba(255, 255, 255, 0.08) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  color: rgba(255, 255, 255, 0.95) !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Mensajes del usuario */
+.chat-message.user,
+.chat-message[data-direction="outgoing"] {
+  background: rgba(255, 255, 255, 0.15) !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+  color: #ffffff !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Área de input */
+.chat-input-container,
+.chat-footer {
+  background: rgba(255, 255, 255, 0.02) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+  padding: 1.2rem !important;
+}
+
+/* Input de texto */
+.chat-input,
+.chat-textarea {
+  background: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  border-radius: 14px !important;
+  color: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(5px) !important;
+  -webkit-backdrop-filter: blur(5px) !important;
+  transition: all 0.3s ease !important;
+  resize: none !important;
+  overflow: hidden !important;
+  min-height: 50px !important;
+  max-height: 120px !important;
+}
+
+/* Textarea específico con borde redondeado solo en esquinas izquierdas */
+textarea[data-test-id="chat-input"] {
+  border-radius: 14px 0 0 14px !important;
+}
+
+.chat-input:focus,
+.chat-textarea:focus {
+  border-color: rgba(255, 255, 255, 0.3) !important;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.1) !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+}
+
+.chat-input::placeholder,
+.chat-textarea::placeholder {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+/* Botones de acción */
+.chat-send-button,
+.chat-file-button {
+  background: rgba(255, 255, 255, 0.1) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  border-radius: 12px !important;
+  color: rgba(255, 255, 255, 0.8) !important;
+  transition: all 0.3s ease !important;
+}
+
+.chat-send-button:hover,
+.chat-file-button:hover {
+  background: rgba(255, 255, 255, 0.15) !important;
+  color: #ffffff !important;
+  transform: translateY(-1px) !important;
+}
+
+/* Botón de cerrar */
+.chat-close-button {
+  color: rgba(255, 255, 255, 0.8) !important;
+  background: rgba(255, 255, 255, 0.05) !important;
+  border-radius: 50% !important;
+  transition: all 0.3s ease !important;
+}
+
+.chat-close-button:hover {
+  color: #ffffff !important;
+  background: rgba(255, 255, 255, 0.1) !important;
+  transform: scale(1.1) !important;
+}
+
+/* Área de mensajes */
+.chat-messages-container,
+.chat-body {
+  background: linear-gradient(180deg, 
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.05) 100%
+  ) !important;
+  backdrop-filter: blur(5px) !important;
+  -webkit-backdrop-filter: blur(5px) !important;
+}
+
+/* Ocultar completamente todos los scrollbars */
+.chat-messages-container::-webkit-scrollbar,
+.chat-input::-webkit-scrollbar,
+.chat-textarea::-webkit-scrollbar,
+.chat-window *::-webkit-scrollbar,
+.n8n-chat *::-webkit-scrollbar {
+  width: 0px !important;
+  height: 0px !important;
+  display: none !important;
+}
+
+.chat-messages-container::-webkit-scrollbar-track,
+.chat-input::-webkit-scrollbar-track,
+.chat-textarea::-webkit-scrollbar-track,
+.chat-window *::-webkit-scrollbar-track,
+.n8n-chat *::-webkit-scrollbar-track {
+  display: none !important;
+}
+
+.chat-messages-container::-webkit-scrollbar-thumb,
+.chat-input::-webkit-scrollbar-thumb,
+.chat-textarea::-webkit-scrollbar-thumb,
+.chat-window *::-webkit-scrollbar-thumb,
+.n8n-chat *::-webkit-scrollbar-thumb {
+  display: none !important;
+}
+
+/* Firefox scrollbar oculto */
+.chat-messages-container,
+.chat-input,
+.chat-textarea,
+.chat-window *,
+.n8n-chat * {
+  scrollbar-width: none !important;
+  scrollbar-color: transparent transparent !important;
+}
+
+/* Comportamiento mejorado del textarea sin scrollbar visible */
+.chat-textarea {
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  scrollbar-width: none !important;
+}
+
+.chat-textarea::-webkit-scrollbar {
+  display: none !important;
+}
+
+/* Contenedor de mensajes con scroll invisible */
+.chat-messages-container {
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  scrollbar-width: none !important;
+}
+
+.chat-messages-container::-webkit-scrollbar {
+  display: none !important;
+}
+
+/* Efectos de aparición suave */
+.chat-message,
+.chat-window,
+.n8n-chat {
+  animation: fadeInUp 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Indicador de escritura */
+.chat-typing-indicator {
+  background: rgba(255, 255, 255, 0.06) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  :root {
+    --chat--window--width: calc(100vw - 2rem);
+    --chat--window--height: calc(100vh - 4rem);
+    --chat--window--bottom: 1rem;
+    --chat--window--right: 1rem;
+  }
+  
+  .chat-window,
+  .n8n-chat {
+    border-radius: 16px !important;
+  }
+  
+  .chat-toggle,
+  .n8n-chat-toggle {
+    --chat--toggle--size: 60px;
+  }
+}
